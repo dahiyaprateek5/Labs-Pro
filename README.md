@@ -156,25 +156,6 @@ Lab A cannot read Lab B's data — not via frontend bugs, not via direct API cal
 
 </div>
 
----
-
-## Local Setup
-
-```bash
-cd frontend
-cp .env.example .env        # add VITE_SUPABASE_URL + VITE_SUPABASE_ANON_KEY
-npm install
-npm run dev                  # http://localhost:5173
-```
-
-**Supabase setup**
-1. Create project at supabase.com
-2. SQL Editor → paste `backend/supabase/schema.sql` → Run
-3. Storage → create `letterheads`, `logos`, `signatures`, `test-templates` buckets (public)
-4. Auth → enable Google + email, add localhost + production URLs
-
----
-
 ## Roadmap
 
 - [ ] Repeat Last Visit — one-click pre-select last visit's tests
